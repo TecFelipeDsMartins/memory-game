@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import Score from './Score'
+import React, { useState, useContext } from 'react'
+import {Context} from '../Context/ContextCardsProvider'
 
 const Card = () => {
     const [ poits, setPoits] = useState(0)
+    const { log } = useContext(Context)
   return(
     <div>
       <div className="Container">
-        <Score poits={poits}/>
         <p>{ poits }</p>
-        <button onClick={()=>{setPoits(poits +1)}}>play</button>
+        <button onClick={()=>{log()}}>play</button>
       </div>
     </div>
   )
