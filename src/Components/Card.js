@@ -6,9 +6,8 @@ const Card = () => {
     const { log } = useContext(Context)
   return(
     <div>
-      <div className="Container">
-        <p>{ poits }</p>
-        <button onClick={()=>{log()}}>play</button>
+      <div className="container">
+        <div className="card"></div>
       </div>
     </div>
   )

@@ -10,7 +10,20 @@ export default function App({poits}) {
     <div>
       <ContextCardsProvider>
       <Score/>
-      <Card/>
+      <div className="grid-container">
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
       </ContextCardsProvider>
     </div>
   );
